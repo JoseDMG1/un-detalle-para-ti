@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Para María Isabel 💛</title>
+  <meta name="description" content="Flores amarillas para María Isabel. Toca y descubre tu sorpresa. 💛">
+  <meta name="theme-color" content="#1c0a2e">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Para María Isabel 💛">
+  <meta property="og:description" content="Flores amarillas para la mujer más hermosa de este mundo 🌻">
+  <meta property="og:image" content="og.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌻%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="bg"></canvas>
+  <canvas id="fx"></canvas>
+
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+  <div class="glow glow-c"></div>
+
+  <div id="intro">
+    <div class="intro-flower">🌻</div>
+    <h1 class="intro-title">Para María Isabel</h1>
+    <p class="intro-sub">Te tengo una sorpresa muy especial…</p>
+    <button id="startBtn" class="btn-gold">Toca para comenzar 💛</button>
+    <p class="intro-hint">Con los audífonos puesto, se escucha mejor ✨</p>
+  </div>
+
+  <main id="scene" class="hidden">
+    <header class="hero">
+      <p class="kicker">Un regalo hecho con mucho cariño</p>
+      <h1 class="hero-title" id="heroTitle" aria-label="Para María Isabel"></h1>
+      <p class="hero-sub"><span class="heartbeat">❤</span> Flores amarillas, tan únicas como tú <span class="heartbeat">❤</span></p>
+    </header>
+
+    <div class="hud">
+      <div class="hud-card">
+        <span class="hud-icon">💛</span>
+        <span class="hud-text"><strong id="counter">0</strong> flores enviadas</span>
+        <button id="heartBtn" class="heart-btn" title="Toca aquí cuando quieras leer mi mensaje">❤</button>
+      </div>
+      <button id="showerBtn" class="btn-gold">Soltar las flores 🌼</button>
+    </div>
+
+    <p class="hint">Toca en cualquier lugar para regalar flores</p>
+  </main>
+
+  <div id="final" class="hidden">
+    <div class="card">
+      <div class="card-flowers">🌼 🌻 🌼</div>
+      <h2 class="card-title">Para María Isabel</h2>
+      <p class="card-msg">Para la mujer más hermosa de este mundo y quien no se va a quedar como espectadora este año jsjs</p>
+      <p class="sign">Con todo mi amor, tu principe José Daniel 💛</p>
+      <button id="againBtn" class="btn-gold">Volver a las flores</button>
+    </div>
+  </div>
+
+  <div id="toasts"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
